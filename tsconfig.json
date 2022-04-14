@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "module": "commonjs",
+    "target": "es2020",
+    "baseUrl": "src",
+    "declaration": true,
+    "moduleResolution": "node",
+    "outDir": "./lib",
+    "esModuleInterop": true,
+    "lib": ["es2020"],
+    "strict": true,    
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "**/__tests__/*"]
+}

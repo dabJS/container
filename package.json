@@ -1,0 +1,46 @@
+{
+  "name": "@dabjs/container",
+  "version": "1.0.0",
+  "description": "The http container module from dabJS",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "clean": "tsc --build --clean",
+    "build": "rimraf lib && tsc -p .",
+    "prepublishOnly": "npm run build"
+  },
+  "nyc": {
+    "extension": [
+      ".ts"
+    ],
+    "all": true,
+    "include": [
+      "src"
+    ],
+    "exclude": [
+      "**/*.d.ts"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dabJS/container.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dabJS/container/issues"
+  },
+  "homepage": "https://github.com/dabJS/container#readme",
+  "dependencies": {
+    "@types/node": "^17.0.24",
+    "node": "^17.7.2",
+    "tsyringe": "^4.6.0"
+  }
+}
